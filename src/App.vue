@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <p>8888</p>
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <router-view></router-view>
   </div>
 </template>
 

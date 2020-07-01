@@ -8588,6 +8588,11 @@ vue-property-decorator@^8.4.2:
   dependencies:
     vue-class-component "^7.1.0"
 
+vue-router@^3.3.4:
+  version "3.3.4"
+  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.3.4.tgz?cache=0&sync_timestamp=1592476684972&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-3.3.4.tgz#4e38abc34a11c41b6c3d8244449a2e363ba6250b"
+  integrity sha1-Tjirw0oRxBtsPYJERJouNjumJQs=
+
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
