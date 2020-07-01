@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
     // ...
+    autoprefixer: {},
     "postcss-px-to-viewport": {
       // options
       unitToConvert: "px", //需要转换的单位，默认为"px"

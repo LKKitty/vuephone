@@ -8,14 +8,23 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { Getter, Mutation, namespace } from "vuex-class";
 import HelloWorld from "./components/HelloWorld.vue";
+import { TestModule } from "@/store/modules/test";
+import store from "@/store";
+const Test = namespace("test");
 
 @Component({
   components: {
     HelloWorld
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  created() {
+    TestModule.fetchNewWheels(5);
+    console.log(this.$store.getters["test/axles"]);
+  }
+}
 </script>
 
 <style lang="scss">
