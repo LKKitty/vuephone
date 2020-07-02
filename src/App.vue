@@ -21,8 +21,8 @@ const Test = namespace("test");
 })
 export default class App extends Vue {
   created() {
-    TestModule.fetchNewWheels(5);
-    console.log(this.$store.getters["test/axles"]);
+    // TestModule.puncture(4);
+    console.log(TestModule.wheels);
   }
 }
 </script>

@@ -7,8 +7,11 @@ import {
 } from "vuex-module-decorators";
 import store from "@/store";
 
+export interface testType {
+  wheels: number;
+}
 @Module({ dynamic: true, store, name: "test" })
-export class Test extends VuexModule {
+export class Test extends VuexModule implements testType {
   public wheels = 2;
   get axles() {
     return this.wheels / 2;
