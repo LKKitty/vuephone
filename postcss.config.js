@@ -18,7 +18,7 @@ module.exports = {
       include: undefined,
       landscape: false, //是否添加根据 landscapeWidth 生成的媒体查询条件 @media (orientation: landscape)
       landscapeUnit: "vw", //横屏时使用的单位
-      landscapeWidth: 568 //横屏时使用的视口宽度
-    }
-  }
+      landscapeWidth: 568, //横屏时使用的视口宽度
+    },
+  },
 };

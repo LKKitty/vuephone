@@ -5,14 +5,14 @@ const routes: Array<RouteConfig> = [
   {
     path: "/HelloWorld",
     name: "HelloWorld",
-    component: () => import("@/components/HelloWorld.vue")
-  }
+    component: () => import("@/components/HelloWorld.vue"),
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.VUE_APP_BASE_PATH,
-  routes
+  routes,
 });
 
 export default router;

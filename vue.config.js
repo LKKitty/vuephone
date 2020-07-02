@@ -12,18 +12,18 @@ module.exports = {
     overlay: {
       //出现编译器错误或警告时，在浏览器中显示全屏覆盖。
       warnings: true,
-      errors: true
+      errors: true,
     },
-    progress: false //将运行进度输出到控制台。
+    progress: false, //将运行进度输出到控制台。
   },
   pluginOptions: {
     "style-resources-loader": {
       preProcessor: "scss",
       patterns: [
         //加上自己的文件路径，不能使用别名
-        path.resolve(__dirname, "src/styles/_variables.scss")
-      ]
-    }
+        path.resolve(__dirname, "src/styles/_variables.scss"),
+      ],
+    },
   },
   chainWebpack(config) {
     // provide the app's title in webpack's name field, so that
@@ -31,7 +31,7 @@ module.exports = {
     config.set("name", process.env.VUE_APP_TITLE);
 
     // https://webpack.js.org/configuration/devtool/#development
-    config.when(process.env.NODE_ENV === "development", config =>
+    config.when(process.env.NODE_ENV === "development", (config) =>
       config.devtool("cheap-eval-source-map")
     );
 
@@ -43,10 +43,10 @@ module.exports = {
       .plugin("simple-progress-webpack-plugin")
       .use(require.resolve("simple-progress-webpack-plugin"), [
         {
-          format: "compact"
-        }
+          format: "compact",
+        },
       ]);
-    config.when(process.env.NODE_ENV !== "development", config => {
+    config.when(process.env.NODE_ENV !== "development", (config) => {
       config.optimization.splitChunks({
         chunks: "all",
         cacheGroups: {
@@ -54,18 +54,18 @@ module.exports = {
             name: "chunk-libs",
             test: /[\\/]node_modules[\\/]/,
             priority: 10,
-            chunks: "initial" // only package third parties that are initially dependent
+            chunks: "initial", // only package third parties that are initially dependent
           },
           commons: {
             name: "chunk-commons",
             test: path.resolve(__dirname, "src/components"),
             minChunks: 3, //  minimum common number
             priority: 5,
-            reuseExistingChunk: true
-          }
-        }
+            reuseExistingChunk: true,
+          },
+        },
       });
       config.optimization.runtimeChunk("single");
     });
-  }
+  },
 };

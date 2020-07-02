@@ -16,8 +16,8 @@ const Test = namespace("test");
 
 @Component({
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
 })
 export default class App extends Vue {
   created() {
@@ -29,12 +29,17 @@ export default class App extends Vue {
 
 <style lang="scss">
 #app {
+  width: 100%;
+  height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $blue;
-  margin-top: 60px;
+  overflow: hidden;
+  img {
+    margin-top: 60px;
+  }
   p {
     color: $light-blue;
   }
