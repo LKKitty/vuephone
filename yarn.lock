@@ -782,6 +782,13 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
+"@babel/runtime@7.x":
+  version "7.12.1"
+  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.12.1.tgz?cache=0&sync_timestamp=1602799933339&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
+  integrity sha1-tBFqa2cR0BCy2tO3tuQ78bmVR0A=
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.6":
   version "7.10.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.3.tgz#670d002655a7c366540c67f6fd3342cd09500364"
@@ -980,6 +987,11 @@
     lodash "^4.17.15"
     semver "^7.3.2"
     tsutils "^3.17.1"
+
+"@vant/icons@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.3.2.tgz#f0930010e7aaa9b06b03636fe9b5bc6477ea224b"
+  integrity sha1-8JMAEOeqqbBrA2Nv6bW8ZHfqIks=
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -5133,6 +5145,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
+konva@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.npm.taobao.org/konva/download/konva-7.0.1.tgz#98a2b057ec15f6ddf5569e8c5e17d519a1034d23"
+  integrity sha1-mKKwV+wV9t31Vp6MXhfVGaEDTSM=
+
 launch-editor-middleware@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/launch-editor-middleware/-/launch-editor-middleware-2.2.1.tgz#e14b07e6c7154b0a4b86a0fd345784e45804c157"
@@ -8524,6 +8541,16 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+vant@^2.10.12:
+  version "2.10.12"
+  resolved "https://registry.npm.taobao.org/vant/download/vant-2.10.12.tgz?cache=0&sync_timestamp=1604287182817&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvant%2Fdownload%2Fvant-2.10.12.tgz#1106eceb4a47754287767b248b832e049178f811"
+  integrity sha1-EQbs60pHdUKHdnski4MuBJF4+BE=
+  dependencies:
+    "@babel/runtime" "7.x"
+    "@vant/icons" "1.3.2"
+    "@vue/babel-helper-vue-jsx-merge-props" "^1.0.0"
+    vue-lazyload "1.2.3"
+
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
@@ -8574,6 +8601,16 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-konva@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.npm.taobao.org/vue-konva/download/vue-konva-2.1.3.tgz#d2b052b881ee5c553d0117f8d21c17732bbd3977"
+  integrity sha1-0rBSuIHuXFU9ARf40hwXcyu9OXc=
+
+vue-lazyload@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npm.taobao.org/vue-lazyload/download/vue-lazyload-1.2.3.tgz#901f9ec15c7e6ca78781a2bae4a343686bdedb2c"
+  integrity sha1-kB+ewVx+bKeHgaK65KNDaGve2yw=
 
 vue-loader@^15.9.2:
   version "15.9.3"
